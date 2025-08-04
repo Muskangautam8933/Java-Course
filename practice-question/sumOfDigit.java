@@ -1,4 +1,4 @@
-
+//sum of digit means if we have number  456 and add 4+5+6=  15 this meaans we have add the number digit
 import java.util.Scanner;
 
 public class sumOfDigit{

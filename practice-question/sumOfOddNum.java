@@ -1,29 +1,27 @@
 
 import java.util.Scanner;
 
+
 public class sumOfOddNum{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Please enter any number :");
+        System.out.print("Please enter any number :");
         int num = sc.nextInt();
-        int sum = printSumofOddNum(num);
-        System.out.println("OddSum till"+ num + "is :" + sum);
-
+        int sum = sumOFOdd(num);
+        System.out.println("Odd sum till "+ num + "is :" + sum);
     }
+    public static int sumOFOdd(int num){
+       int sum = 0;
+       int i = 1;
+       while(i <= num){
+        sum += i;
+        i += 2;
 
-    public static int printSumofOddNum(int num){
-        int sum = 0;
-        int i = 1;
-        while(i <= num){
-            sum += i;
-            i += 2;
-        }
-        return sum;
+       }
+       return sum;
+
     }
 }
-
-
-
 
 
 
